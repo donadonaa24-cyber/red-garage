@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#26262b"/>
+      <stop offset="1" stop-color="#0c0c0e"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0343c"/>
+      <stop offset="0.55" stop-color="#c8161f"/>
+      <stop offset="1" stop-color="#8e0e15"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a4552"/>
+      <stop offset="1" stop-color="#151a20"/>
+    </linearGradient>
+    <radialGradient id="lens" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.45" stop-color="#dfe8f1"/>
+      <stop offset="1" stop-color="#8ea3b8"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <g transform="translate(256 290) scale(1) translate(-256 -290)">
+    <!-- 路面の影 -->
+    <ellipse cx="256" cy="404" rx="182" ry="14" fill="#000" opacity="0.45"/>
+    <!-- タイヤ -->
+    <rect x="104" y="356" width="52" height="48" rx="10" fill="#0a0a0a"/>
+    <rect x="356" y="356" width="52" height="48" rx="10" fill="#0a0a0a"/>
+    <!-- フロントガラス（オープン状態の窓枠） -->
+    <path d="M150 246 L184 176 Q256 166 328 176 L362 246 Z" fill="url(#glass)" stroke="#c9ced4" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M196 188 Q226 182 250 182 L222 236 L176 236 Z" fill="#ffffff" opacity="0.12"/>
+    <!-- ミラー -->
+    <ellipse cx="132" cy="240" rx="20" ry="13" fill="#b8131b"/>
+    <ellipse cx="380" cy="240" rx="20" ry="13" fill="#b8131b"/>
+    <!-- 丸みのあるボディ -->
+    <path d="M92 306 C92 256 136 238 192 234 L320 234 C376 238 420 256 420 306 L420 350 C420 372 404 386 382 386 L130 386 C108 386 92 372 92 350 Z" fill="url(#body)"/>
+    <!-- ボンネットのハイライト -->
+    <path d="M150 252 Q256 238 362 252 Q256 262 150 252 Z" fill="#ffffff" opacity="0.28"/>
+    <!-- 丸目ヘッドライト -->
+    <circle cx="164" cy="292" r="42" fill="#d4d8dd"/>
+    <circle cx="164" cy="292" r="33" fill="url(#lens)"/>
+    <circle cx="152" cy="280" r="8" fill="#ffffff" opacity="0.9"/>
+    <circle cx="348" cy="292" r="42" fill="#d4d8dd"/>
+    <circle cx="348" cy="292" r="33" fill="url(#lens)"/>
+    <circle cx="336" cy="280" r="8" fill="#ffffff" opacity="0.9"/>
+    <!-- 小さなグリル開口 -->
+    <ellipse cx="256" cy="342" rx="52" ry="17" fill="#14080a"/>
+    <ellipse cx="256" cy="336" rx="40" ry="5" fill="#ffffff" opacity="0.08"/>
+    <!-- バンパーのシルバーライン -->
+    <path d="M118 366 Q256 378 394 366" stroke="#c9ced4" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.85"/>
+  </g>
+</svg>
